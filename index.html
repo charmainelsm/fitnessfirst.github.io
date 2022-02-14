@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+</head>
+<body>
+
+<div style="margin-centre:15%; padding:1px 16px; height:1000px;"</div>
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h1 style= "text-align:center ; Color:white; font- size:350px"> Fitness First at Singapore Singpost Centre</h1>
+</div>
+
+<div class="navbar">
+ <a href="index.html">Home</a>
+  <a href="facilities.html">Facilities</a>
+  <a href="programmes.html">Programmes</a>
+  <a href="membership.html">Membership Rates</a>
+
+</div>
+
+
+ <h2 style= "color: crimson">About Fitness First at Singpost Centre</h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="logo.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="lift.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="weight.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  <p>The newest addition to our 20 years strong club portfolio, the Fitness First at Paya Lebar is located at Singapore Post Centre. 
+
+<br> Located in the buzzing east of Singapore, this 12,000 square feet club, lifestyle destination is easily accessible by East-West Line train services and is situated right beside Paya Lebar MRT Station at Level 2. </p>
+
+<br>
+
+<center>
+<video width="800" controls>
+  <source src="video.mov" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+</center>
+
+  <h3 style= "color: crimson">Getting there</h3>
+<a href="https://www.google.com/maps/dir/1.3172386,103.8332198/fitness+first+paya+lebar+map/@1.3178437,103.8263763,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x31da19923f7562cb:0xb117f87e4213a7bf!2m2!1d103.8948672!2d1.318983S">
+<img src="map.jpg" width="700" height="400" alt="google map" title="map"></a>
+</a>
+<p style=" text-align: center;">Click on the map to find your way there!</p>
+
+
+<br>
+
+ <h3 style= "color: crimson">Operating Hours</h3>
+<table>
+  <tr>
+    <th>Opening Hours</th>
+    <th>Contact Number</th>
+    <th>Location</th>
+  </tr>
+  <tr>
+    <td>Mon - Fri: 6:00am - 10:00pm Sat,Sun,PH: 8:00am- 10:00pm</td>
+    <td> 6423 9128</td>
+	  <td>8 Eunos Road, #02-104, Singapore Post Centre, Singapore 408600</td>
+	</tr>
+</table>
+
+
+
+
+</body>
+</html>
